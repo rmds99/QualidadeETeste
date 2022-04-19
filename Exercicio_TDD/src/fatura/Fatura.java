@@ -26,4 +26,7 @@ public class Fatura {
 	public double getValor() {
 		return valor;
 	}
+	public String getPago() {
+		return pago;
+	}
 }
