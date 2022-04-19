@@ -22,4 +22,9 @@ public class FaturaTest {
 		Assertions.assertEquals(name, "rafael");
 	}
 	
+	@Test
+	public void testaGetdata() {
+		Date time = fatura.getdata();
+		Assertions.assertEquals(time, data );
+	}
 }
