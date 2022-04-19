@@ -32,4 +32,9 @@ public class FaturaTest {
 		double dinheiro = fatura.getValor();
 		Assertions.assertEquals(dinheiro, 15000.0);
 	}
+	@Test
+	public void testaGetPago() {
+		String pagamento = fatura.getPago();
+		Assertions.assertEquals(pagamento, "não pago");
+	}
 }
