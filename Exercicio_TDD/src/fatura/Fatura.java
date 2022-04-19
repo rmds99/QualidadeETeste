@@ -23,4 +23,7 @@ public class Fatura {
 	public Date getData() {
 		return data;
 	}
+	public double getValor() {
+		return valor;
+	}
 }
