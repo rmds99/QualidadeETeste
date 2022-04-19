@@ -17,5 +17,7 @@ public class Fatura {
 		this.valor = valor;
 		this.pago = pago;
 	}
-
+	public String getName() {
+		return nome;
+	}
 }
