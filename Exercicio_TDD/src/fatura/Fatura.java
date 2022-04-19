@@ -20,4 +20,7 @@ public class Fatura {
 	public String getName() {
 		return nome;
 	}
+	public Date getData() {
+		return data;
+	}
 }
