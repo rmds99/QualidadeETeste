@@ -13,7 +13,7 @@ public class FaturaTest {
 	@BeforeEach
 	public void inicializa() {
 		data = new Date();
-		fatura = new Fatura ("rafael", data , 1000.0, "não pago");
+		fatura = new Fatura ("rafael", data , 15000.0, "não pago");
 	}
 	
 	@Test
@@ -26,5 +26,10 @@ public class FaturaTest {
 	public void testaGetData() {
 		Date time = fatura.getData();
 		Assertions.assertEquals(time, data );
+	}
+	@Test
+	public void testaGetValor() {
+		double dinheiro = fatura.getValor();
+		Assertions.assertEquals(dinheiro, 15000.0);
 	}
 }
